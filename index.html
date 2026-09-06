@@ -1,0 +1,1172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Farah Ahmed | Ward 5 City Council</title>
+
+    <meta name="description" content="Farah Ahmed — Candidate for Windsor City Council, Ward 5. Working together for a safer, cleaner and stronger community.">
+
+    <style>
+
+        /* ==============================
+           RESET
+        ============================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f8f8f6;
+            color: #17212b;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+
+        /* ==============================
+           HEADER
+        ============================== */
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav {
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: white;
+            font-weight: 900;
+            font-size: 23px;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            display: block;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 2.5px;
+            margin-top: 2px;
+            opacity: .85;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+            transition: .3s;
+        }
+
+        .nav-links a:hover {
+            opacity: .65;
+        }
+
+        .nav-button {
+            background: #d49a45;
+            padding: 12px 22px;
+            border-radius: 4px;
+            color: white !important;
+        }
+
+
+        /* ==============================
+           HERO
+        ============================== */
+
+        .hero {
+            min-height: 760px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(12, 29, 45, .97) 0%,
+                    rgba(12, 29, 45, .84) 38%,
+                    rgba(12, 29, 45, .45) 70%,
+                    rgba(12, 29, 45, .12) 100%
+                ),
+                url("farahpikc.JPG");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            color: white;
+            max-width: 680px;
+            padding-top: 70px;
+        }
+
+        .hero-label {
+            display: inline-block;
+            border-left: 4px solid #d49a45;
+            padding-left: 13px;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-size: clamp(64px, 9vw, 110px);
+            line-height: .88;
+            letter-spacing: -5px;
+            font-weight: 900;
+            margin-bottom: 28px;
+        }
+
+        .hero h1 span {
+            color: #d49a45;
+        }
+
+        .hero h2 {
+            font-size: 29px;
+            font-weight: 400;
+            margin-bottom: 18px;
+        }
+
+        .hero-text {
+            max-width: 610px;
+            color: #e7edf2;
+            font-size: 18px;
+            line-height: 1.75;
+            margin-bottom: 34px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 25px;
+            font-size: 14px;
+            font-weight: 800;
+            border-radius: 4px;
+            transition: .3s;
+        }
+
+        .btn-primary {
+            background: #d49a45;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            background: #bf8434;
+        }
+
+        .btn-outline {
+            border: 1px solid rgba(255,255,255,.7);
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #172f45;
+        }
+
+
+        /* ==============================
+           INTRO STRIP
+        ============================== */
+
+        .intro-strip {
+            background: #d49a45;
+            color: white;
+        }
+
+        .intro-strip-inner {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .intro-stat {
+            padding: 25px 20px;
+            text-align: center;
+            border-right: 1px solid rgba(255,255,255,.25);
+        }
+
+        .intro-stat:last-child {
+            border-right: none;
+        }
+
+        .intro-stat strong {
+            display: block;
+            font-size: 17px;
+            margin-bottom: 3px;
+        }
+
+        .intro-stat span {
+            font-size: 12px;
+            opacity: .9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+
+        /* ==============================
+           ABOUT
+        ============================== */
+
+        .about {
+            padding: 110px 0;
+            background: white;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: .8fr 1.5fr;
+            gap: 90px;
+            align-items: start;
+        }
+
+        .eyebrow {
+            color: #b77c2d;
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 13px;
+        }
+
+        .about-title {
+            color: #17334b;
+            font-size: clamp(42px, 5vw, 65px);
+            line-height: 1;
+            letter-spacing: -2px;
+            font-weight: 900;
+        }
+
+        .about-title span {
+            color: #d49a45;
+        }
+
+        .about-content p {
+            color: #586572;
+            font-size: 17px;
+            line-height: 1.85;
+            margin-bottom: 22px;
+        }
+
+        .about-content p:first-child {
+            color: #273b4c;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .signature {
+            margin-top: 30px;
+            padding-left: 20px;
+            border-left: 4px solid #d49a45;
+        }
+
+        .signature strong {
+            display: block;
+            color: #17334b;
+            font-size: 19px;
+        }
+
+        .signature span {
+            color: #77818a;
+            font-size: 13px;
+        }
+
+
+        /* ==============================
+           PRIORITIES
+        ============================== */
+
+        .priorities {
+            padding: 110px 0;
+            background: #f1f4f5;
+        }
+
+        .section-header {
+            max-width: 700px;
+            margin-bottom: 55px;
+        }
+
+        .section-header h2 {
+            color: #17334b;
+            font-size: clamp(40px, 5vw, 58px);
+            line-height: 1;
+            letter-spacing: -2px;
+            margin-bottom: 18px;
+        }
+
+        .section-header p {
+            color: #68747e;
+            font-size: 17px;
+        }
+
+        .priority-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .priority-card {
+            background: white;
+            padding: 35px;
+            min-height: 310px;
+            border-top: 4px solid #d49a45;
+            transition: .3s;
+        }
+
+        .priority-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 18px 45px rgba(15,35,50,.10);
+        }
+
+        .priority-number {
+            color: #d49a45;
+            font-size: 13px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            margin-bottom: 28px;
+        }
+
+        .priority-card h3 {
+            color: #17334b;
+            font-size: 24px;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .priority-card p {
+            color: #68747e;
+            font-size: 15px;
+            line-height: 1.75;
+        }
+
+
+        /* ==============================
+           COMMUNITY MESSAGE
+        ============================== */
+
+        .community {
+            padding: 115px 0;
+            background: #17334b;
+            color: white;
+            text-align: center;
+        }
+
+        .community-content {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .community .eyebrow {
+            color: #d49a45;
+        }
+
+        .community h2 {
+            font-size: clamp(42px, 6vw, 72px);
+            line-height: .98;
+            letter-spacing: -3px;
+            margin-bottom: 25px;
+        }
+
+        .community h2 span {
+            color: #d49a45;
+        }
+
+        .community p {
+            max-width: 680px;
+            margin: auto auto 32px;
+            color: #d5dfe6;
+            font-size: 18px;
+            line-height: 1.75;
+        }
+
+
+        /* ==============================
+           CONTACT
+        ============================== */
+
+        .contact {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .contact-box {
+            background: #f1f4f5;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            padding: 65px;
+            border-left: 5px solid #d49a45;
+        }
+
+        .contact-box h2 {
+            color: #17334b;
+            font-size: clamp(40px, 5vw, 58px);
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        .contact-box > div:first-child p {
+            color: #68747e;
+            font-size: 17px;
+            max-width: 450px;
+            line-height: 1.7;
+        }
+
+        .contact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-item {
+            background: white;
+            padding: 20px 23px;
+        }
+
+        .contact-item small {
+            display: block;
+            color: #8a939a;
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 1.5px;
+            margin-bottom: 4px;
+        }
+
+        .contact-item a {
+            color: #17334b;
+            font-size: 17px;
+            font-weight: 700;
+        }
+
+        .contact-item a:hover {
+            color: #b77c2d;
+        }
+
+
+        /* ==============================
+           FOOTER
+        ============================== */
+
+        footer {
+            background: #0e2435;
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .footer-name {
+            font-size: 19px;
+            font-weight: 900;
+        }
+
+        .footer-subtitle {
+            color: #9eacb6;
+            font-size: 12px;
+            margin-top: 3px;
+        }
+
+        .footer-right {
+            color: #9eacb6;
+            font-size: 12px;
+            text-align: right;
+        }
+
+
+        /* ==============================
+           MOBILE
+        ============================== */
+
+        @media (max-width: 900px) {
+
+            .nav {
+                height: 75px;
+            }
+
+            .nav-links {
+                gap: 17px;
+            }
+
+            .nav-links a {
+                font-size: 12px;
+            }
+
+            .nav-button {
+                display: none;
+            }
+
+            .hero {
+                min-height: 720px;
+                background-position: 63% center;
+            }
+
+            .hero-content {
+                max-width: 600px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .priority-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .contact-box {
+                grid-template-columns: 1fr;
+                gap: 35px;
+                padding: 45px;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            .container {
+                width: 88%;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            .logo span {
+                font-size: 8px;
+            }
+
+            .nav-links a:nth-child(2),
+            .nav-links a:nth-child(3) {
+                display: none;
+            }
+
+            .hero {
+                min-height: 680px;
+                background-position: 67% center;
+            }
+
+            .hero-content {
+                padding-top: 75px;
+                text-align: left;
+            }
+
+            .hero h1 {
+                font-size: 65px;
+                letter-spacing: -3px;
+            }
+
+            .hero h2 {
+                font-size: 23px;
+            }
+
+            .hero-text {
+                font-size: 16px;
+            }
+
+            .intro-strip-inner {
+                grid-template-columns: 1fr;
+            }
+
+            .intro-stat {
+                border-right: none;
+                border-bottom: 1px solid rgba(255,255,255,.25);
+            }
+
+            .intro-stat:last-child {
+                border-bottom: none;
+            }
+
+            .about,
+            .priorities,
+            .contact {
+                padding: 75px 0;
+            }
+
+            .priority-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .priority-card {
+                min-height: auto;
+            }
+
+            .community {
+                padding: 80px 0;
+            }
+
+            .community h2 {
+                letter-spacing: -2px;
+            }
+
+            .contact-box {
+                padding: 35px 25px;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-right {
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- ==============================
+     HEADER
+============================== -->
+
+<header>
+
+    <div class="container nav">
+
+        <a href="#" class="logo">
+            FARAH AHMED
+            <span>WARD 5 • CITY COUNCIL</span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="#about">About</a>
+
+            <a href="#priorities">Priorities</a>
+
+            <a href="#contact">Contact</a>
+
+            <a href="#contact" class="nav-button">
+                Get Involved
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==============================
+     HERO
+============================== -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <div class="hero-label">
+                Candidate for Windsor City Council
+            </div>
+
+            <h1>
+                Farah<br>
+                <span>Ahmed</span>
+            </h1>
+
+            <h2>
+                A strong voice for Ward 5.
+            </h2>
+
+            <p class="hero-text">
+                Fifteen years of calling Ward 5 home have given me
+                a deep connection to this community. I am running
+                to listen, work hard, and help build a safer,
+                cleaner and stronger neighbourhood for everyone.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#about" class="btn btn-primary">
+                    Meet Farah
+                </a>
+
+                <a href="#priorities" class="btn btn-outline">
+                    My Priorities
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==============================
+     QUICK FACTS
+============================== -->
+
+<section class="intro-strip">
+
+    <div class="container intro-strip-inner">
+
+        <div class="intro-stat">
+            <strong>15 Years</strong>
+            <span>Calling Ward 5 Home</span>
+        </div>
+
+        <div class="intro-stat">
+            <strong>Local Experience</strong>
+            <span>Welder & Community Member</span>
+        </div>
+
+        <div class="intro-stat">
+            <strong>Community First</strong>
+            <span>Listening • Working • Delivering</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==============================
+     ABOUT
+============================== -->
+
+<section id="about" class="about">
+
+    <div class="container about-grid">
+
+        <div>
+
+            <div class="eyebrow">
+                About Farah
+            </div>
+
+            <h2 class="about-title">
+                Putting<br>
+                <span>Ward 5</span><br>
+                first.
+            </h2>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p>
+                My name is Farah Ahmed, and I am proud to be a
+                candidate for Windsor City Council in Ward 5.
+            </p>
+
+            <p>
+                I have called Ward 5 home for the past 15 years,
+                living at the same address and building strong roots
+                in the community I care about.
+            </p>
+
+            <p>
+                I attended J.L. Forster Secondary School in Windsor
+                and later graduated from St. Clair College as a
+                Welding Technician. I am a welder by trade, and my
+                career has taught me the value of hard work,
+                responsibility, teamwork and solving problems.
+            </p>
+
+            <p>
+                I believe those same values belong in City Hall.
+                Good leadership starts with listening. That means
+                hearing residents' concerns, understanding their
+                ideas and working together to find practical
+                solutions.
+            </p>
+
+            <p>
+                My goal is simple: help make Ward 5 safer, cleaner,
+                stronger and a better place to live, work and raise
+                a family.
+            </p>
+
+            <div class="signature">
+
+                <strong>Farah Ahmed</strong>
+
+                <span>
+                    Candidate for Windsor City Council — Ward 5
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==============================
+     PRIORITIES
+============================== -->
+
+<section id="priorities" class="priorities">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="eyebrow">
+                What I Will Work For
+            </div>
+
+            <h2>
+                Priorities for Ward 5
+            </h2>
+
+            <p>
+                Practical priorities focused on the everyday needs
+                of residents, families and local businesses.
+            </p>
+
+        </div>
+
+
+        <div class="priority-grid">
+
+
+            <!-- 01 -->
+
+            <div class="priority-card">
+
+                <div class="priority-number">
+                    PRIORITY 01
+                </div>
+
+                <h3>
+                    Support Local Businesses
+                </h3>
+
+                <p>
+                    Local businesses create jobs, strengthen
+                    neighbourhoods and keep our community moving.
+                    I will support small businesses and work toward
+                    an environment where local entrepreneurs can
+                    open, grow and succeed in Windsor.
+                </p>
+
+            </div>
+
+
+            <!-- 02 -->
+
+            <div class="priority-card">
+
+                <div class="priority-number">
+                    PRIORITY 02
+                </div>
+
+                <h3>
+                    Better Housing & Infrastructure
+                </h3>
+
+                <p>
+                    Residents deserve safe and affordable places
+                    to live, along with roads, sidewalks, parks and
+                    public spaces that are properly maintained. I
+                    will push for practical improvements that make
+                    everyday life better.
+                </p>
+
+            </div>
+
+
+            <!-- 03 -->
+
+            <div class="priority-card">
+
+                <div class="priority-number">
+                    PRIORITY 03
+                </div>
+
+                <h3>
+                    Safer & Stronger Neighbourhoods
+                </h3>
+
+                <p>
+                    Our neighbourhoods should be places where people
+                    feel safe and proud to live. I will advocate for
+                    cleaner streets, better parks, safer public
+                    spaces and strong community connections.
+                </p>
+
+            </div>
+
+
+            <!-- 04 -->
+
+            <div class="priority-card">
+
+                <div class="priority-number">
+                    PRIORITY 04
+                </div>
+
+                <h3>
+                    Every Voice Matters
+                </h3>
+
+                <p>
+                    Residents deserve a councillor who listens.
+                    I will make myself available to the community,
+                    listen to concerns and make sure Ward 5 has a
+                    strong and respected voice at City Hall.
+                </p>
+
+            </div>
+
+
+            <!-- 05 -->
+
+            <div class="priority-card">
+
+                <div class="priority-number">
+                    PRIORITY 05
+                </div>
+
+                <h3>
+                    A Better Future for Ward 5
+                </h3>
+
+                <p>
+                    I believe Ward 5 can be stronger. Together,
+                    we can support a local economy, improve city
+                    services, build safer neighbourhoods and create
+                    a community we are proud to call home.
+                </p>
+
+            </div>
+
+
+            <!-- 06 -->
+
+            <div class="priority-card">
+
+                <div class="priority-number">
+                    PRIORITY 06
+                </div>
+
+                <h3>
+                    Responsible Leadership
+                </h3>
+
+                <p>
+                    Residents deserve accountability and responsible
+                    decisions. I will approach municipal issues with
+                    honesty, respect and a focus on practical results
+                    for the people of Ward 5.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==============================
+     COMMUNITY MESSAGE
+============================== -->
+
+<section class="community">
+
+    <div class="container community-content">
+
+        <div class="eyebrow">
+            Our Community. Our Future.
+        </div>
+
+        <h2>
+            Ward 5 deserves<br>
+            <span>a strong voice.</span>
+        </h2>
+
+        <p>
+            Families, seniors, students, workers, newcomers and
+            local businesses all help make Ward 5 what it is.
+            I want to work with our community to build a safer,
+            cleaner and stronger future.
+        </p>
+
+        <a href="#contact" class="btn btn-primary">
+            Connect With Farah
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==============================
+     CONTACT
+============================== -->
+
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <div class="contact-box">
+
+            <div>
+
+                <div class="eyebrow">
+                    Get In Touch
+                </div>
+
+                <h2>
+                    Let's talk<br>
+                    about Ward 5.
+                </h2>
+
+                <p>
+                    Have an idea, concern or question about our
+                    community? Farah wants to hear from you.
+                </p>
+
+            </div>
+
+
+            <div class="contact-list">
+
+                <div class="contact-item">
+
+                    <small>Email</small>
+
+                    <a href="mailto:haifo251@gmail.com">
+                        haifo251@gmail.com
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <small>Phone</small>
+
+                    <a href="tel:+12262462248">
+                        226-246-2248
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <small>Campaign</small>
+
+                    <a href="#about">
+                        Farah Ahmed — Ward 5
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==============================
+     FOOTER
+============================== -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <div>
+
+            <div class="footer-name">
+                Farah Ahmed
+            </div>
+
+            <div class="footer-subtitle">
+                Candidate for Windsor City Council — Ward 5
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+            Windsor, Ontario<br>
+            © 2026 Farah Ahmed Campaign
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
+```
